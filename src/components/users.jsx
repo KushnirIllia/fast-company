@@ -7,6 +7,10 @@ const Users = () => {
     setUsers((prevState) => prevState.filter(user => user._id !== userId))
     // setUsers(users.filter(user => user._id !== userId))
   }
+  const hangingOutNumber = () => {
+    return users.length !== 0 ? <span className="badge bg-primary">{users.length} з тобою тусане сьогодні</span> :
+      <span className="badge bg-danger">З тобою ніхто не тусане сьогодні</span>
+  }
   const renderUsers = (usersArr) => {
     const renderQualities = (qualities) => {
       return qualities.map(quality => {
@@ -29,23 +33,25 @@ const Users = () => {
       )
     })
   }
-  const usersTable = <table className="table">
-    <thead>
-    <tr>
-      <th scope="col">Ім'я</th>
-      <th scope="col">Якості</th>
-      <th scope="col">Професія</th>
-      <th scope="col">Зустрівся(кільк. раз)</th>
-      <th scope="col">Оцінка</th>
-      <th scope="col"></th>
-    </tr>
-    </thead>
-    <tbody>
-    {renderUsers(users)}
-    </tbody>
-  </table>
-  return users.length !== 0 ?
-    <><h1><span className="badge bg-primary">{users.length} з тобою тусане сьогодні</span></h1>{usersTable}</> :
-    <h1><span className="badge bg-danger">З тобою ніхто не тусане сьогодні</span></h1>
+  return (
+    <>
+      <h1>{hangingOutNumber()}</h1>
+      <table className="table">
+        <thead>
+        <tr>
+          <th scope="col">Ім'я</th>
+          <th scope="col">Якості</th>
+          <th scope="col">Професія</th>
+          <th scope="col">Зустрівся(кільк. раз)</th>
+          <th scope="col">Оцінка</th>
+          <th scope="col"></th>
+        </tr>
+        </thead>
+        <tbody>
+        {renderUsers(users)}
+        </tbody>
+      </table>
+    </>
+  )
 }
 export default Users
