@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c69c5946-96bb-4fa6-8b87-d716e1467c00" name="Changes" comment="Initialize project using Create React App, component User" />
+    <list default="true" id="c69c5946-96bb-4fa6-8b87-d716e1467c00" name="Changes" comment="upgraded User Component">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,7 +86,7 @@
       <workItem from="1648071473654" duration="40000" />
       <workItem from="1648071526507" duration="639000" />
       <workItem from="1648109896141" duration="4041000" />
-      <workItem from="1648191559510" duration="6946000" />
+      <workItem from="1648191559510" duration="11170000" />
     </task>
     <task id="LOCAL-00001" summary="Initialize project using Create React App, component User">
       <created>1648205010493</created>
@@ -93,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648205010493</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="upgraded User Component">
+      <created>1648244106661</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1648244106661</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,7 +124,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
@@ -131,7 +140,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value=",component User" />
     <MESSAGE value="Initialize project using Create React App, component User" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initialize project using Create React App, component User" />
+    <MESSAGE value="upgraded User Component" />
+    <option name="LAST_COMMIT_MESSAGE" value="upgraded User Component" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
