@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import api from './api'
 import Users from './components/users'
 import SearchStatus from './components/searchStatus'
@@ -9,12 +9,12 @@ const App = () => {
   const handleDelete = (userId) => {
     setUsers((prevState) => prevState.filter(user => user._id !== userId))
   }
-  const toggleBookmark = (id) => {
-    setUsers(users.map(u => {
-      if (u._id === id) {
-        return {...u, bookmark: !u.bookmark}
+  const toggleBookmark = (userId) => {
+    setUsers(users.map(user => {
+      if (user._id === userId) {
+        return { ...user, bookmark: !user.bookmark }
       }
-      return u
+      return user
     }))
   }
   return <div>
