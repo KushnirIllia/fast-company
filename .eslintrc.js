@@ -18,6 +18,8 @@ module.exports = {
     'react'
   ],
   rules: {
-    'eol-last': 0
+    'eol-last': 0,
+    'no-useless-return': 0,
+    'no-case-declarations': 0
   }
 }
