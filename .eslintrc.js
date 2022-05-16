@@ -20,6 +20,7 @@ module.exports = {
   rules: {
     'eol-last': 0,
     'no-useless-return': 0,
-    'no-case-declarations': 0
+    'no-case-declarations': 0,
+    indent: 'off'
   }
 }

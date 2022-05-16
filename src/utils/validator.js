@@ -4,7 +4,11 @@ export const validator = (data, config) => {
     let status
     switch (obj) {
       case 'isRequired':
-        status = field.trim() === ''
+        if (typeof (field) === 'boolean') {
+          status = !field
+        } else {
+          status = field.trim() === ''
+        }
         break
       case 'isEmail':
         const emailRegExp = /^\S+@\S+\.\S+$/g

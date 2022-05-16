@@ -6,12 +6,15 @@ const TextField = ({ label, type, name, value, onChange, error }) => {
   const toggleShowPass = () => {
     setShowPassword((prevState) => !prevState)
   }
+  const handleChange = ({ target }) => {
+    onChange({ name: target.name, value: target.value })
+  }
   return (
     <div className="mb-4">
       <label className="" htmlFor={name}>{label}</label>
       <div className="input-group has-validation">
-        <input className={`form-control ${error ? 'is-invalid' : 'is-valid'}`} type={showPassword ? 'text' : type} id={name} name={name} value={value}
-               onChange={onChange}/>
+        <input className={`form-control ${error ? 'is-invalid' : ''}`} type={showPassword ? 'text' : type} id={name} name={name} value={value}
+               onChange={handleChange}/>
         {type === 'password' &&
         <button className="btn btn-outline-secondary rounded" type="button" onClick={toggleShowPass}>
           <i className={`bi bi-eye${showPassword ? '-slash' : ''}`}/>
