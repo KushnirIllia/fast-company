@@ -20,7 +20,13 @@ const fetchAll = () =>
       resolve(professionsObject)
     }, 2000)
   })
-
+// const getId = () => {
+//   new Promise(resolve => {
+//     window.setTimeout(function () {
+//
+//     })
+//   })
+// }
 export default {
   fetchAll
 }
